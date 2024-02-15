@@ -78,5 +78,15 @@ app.post('/messages/save', async (req, res) => {
   }
 })
 
+const aboutUsData = {
+  title: 'About Us',
+  content: ['test'],
+  imageURL: '#'
+}
+
+app.get('/about-us', (req, res) => {
+  res.json(aboutUsData)
+})
+
 // export the express app we created to make it available to other modules
 module.exports = app // CommonJS export style!
