@@ -6,6 +6,8 @@ import Home from './Home'
 import Header from './Header'
 import Footer from './Footer'
 
+/*attempt*/ import About from './About'
+
 const App = props => {
   return (
     <div className="App">
@@ -20,10 +22,10 @@ const App = props => {
             <Route path="/messages" element={<Messages />} />
 
             {/* a route for just a single message, where the id of the desired message is passed as a parameter */}
-            <Route
-              path="/messages/:messageId"
-              element={<MessageStandalone />}
-            />
+            <Route path="/messages/:messageId" element={<MessageStandalone />} />
+
+            {/* tryna add a route for about */}
+            <Route path="/about" element={<About />} />
           </Routes>
         </main>
         <Footer />
