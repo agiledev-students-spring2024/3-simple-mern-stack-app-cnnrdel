@@ -26,7 +26,9 @@ const About = () => {
       <img
         // src={aboutUsData.imageURL}
         // src="http://localhost:3000/static/portrait.jpg"
-        src = "../../back-end/public/asset/portrait.png"
+        // src = "../../back-end/public/asset/portrait.png"
+        // src='portrait.jpg'
+        src='../portrait.jpg'
         alt="About Us"
         style={{maxWidth: '100%'}}
       />
@@ -38,8 +40,7 @@ const About = () => {
 
       </p>
       <p>
-              Connor's unique combination of interests and skills positions him as an emerging talent in the tech industry, with a clear vision for integrating the realms of computer science and creativity. His pursuit of a creative career is underpinned by a robust educational background and a keen interest in innovative app development practices. As he continues to navigate his coursework and hands-on projects at New York University, Connor is laying the groundwork for a future where technology and art converge, promising a career that is as impactful as it is imaginative.
-
+      Connor's unique combination of interests and skills positions him as an emerging talent in the tech industry, with a clear vision for integrating the realms of computer science and creativity. His pursuit of a creative career is underpinned by a robust educational background and a keen interest in innovative app development practices. As he continues to navigate his coursework and hands-on projects at New York University, Connor is laying the groundwork for a future where technology and art converge, promising a career that is as impactful as it is imaginative.
       </p>
     </div>
 
