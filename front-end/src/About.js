@@ -19,7 +19,7 @@ const About = () => {
   return (
     <>
     <div>
-      <h1>{aboutUsData.title}Test!</h1>
+      <h1>{aboutUsData.title}About Us</h1>
       {aboutUsData.content.map((paragraph, index) => (
         <p key={index}>{paragraph}</p>
       ))}
