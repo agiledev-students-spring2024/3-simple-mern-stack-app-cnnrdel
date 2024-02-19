@@ -78,15 +78,39 @@ app.post('/messages/save', async (req, res) => {
   }
 })
 
-const aboutUsData = {
-  title: 'About Us',
-  content: ['test'],
-  imageURL: '#'
-}
+// const aboutUsData = {
+//   title: 'About Us',
+//   content: ['test'],
+//   imageURL: '#'
+// }
 
-app.get('/about-us', (req, res) => {
-  res.json(aboutUsData)
-})
+// app.get('/about-us', (req, res) => {
+//   res.json(aboutUsData)
+// })
+
+const aboutData = {
+  image: 'https://res.cloudinary.com/dmsgdgvnd/image/upload/v1708381350/connor_deleon_student_id_pmwpqc.jpg',
+  content: ''
+};
+// https://drive.google.com/file/d/1bIHw69lcF3LWi8YG5NNJBinCTBN7rQvM/view?usp=sharing
+app.get('/about_us', (req, res) => {
+  res.json(aboutData);
+});
 
 // export the express app we created to make it available to other modules
 module.exports = app // CommonJS export style!
+
+
+// import React from 'react';
+
+// const ImageFromGoogleDrive = () => {
+//     const imageUrl = <yourLinkj>
+
+//     return (
+//         <div>
+//             <img src={imageUrl} alt="Image from Google Drive" />
+//         </div>
+//     );
+// };
+
+// export default ImageFromGoogleDrive;

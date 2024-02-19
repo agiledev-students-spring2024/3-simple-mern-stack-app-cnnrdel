@@ -8,7 +8,7 @@ const About = () => {
   })
   
   useEffect(() => {
-    fetch('/about-us')
+    fetch('http://localhost:5002/about_us')
     .then(res => res.json())
     .then(data => {
       setAboutUsData(data)
@@ -19,18 +19,14 @@ const About = () => {
   return (
     <>
     <div>
-      <h1>{aboutUsData.title}About Us</h1>
-      {aboutUsData.content.map((paragraph, index) => (
-        <p key={index}>{paragraph}</p>
-      ))}
+      <h1>About Us</h1>
+
       <img
-        // src={aboutUsData.imageURL}
-        // src="http://localhost:3000/static/portrait.jpg"
-        // src = "../../back-end/public/asset/portrait.png"
-        // src='portrait.jpg'
-        src='../portrait.jpg'
+        src= {aboutUsData.image}
         alt="About Us"
-        style={{maxWidth: '100%'}}
+        style={{ maxWidth: '500px', height: 'auto' }}
+        // style={{maxWidth: '100%'}}
+        
       />
       <p>
       Connor DeLeon, hailing from Baltimore, is a computer science major at New York University, showcasing a profound dedication to both technical and creative disciplines. His academic journey is enriched by minors in American Sign Language, Web Applications and Development, and Studio Art, illustrating a diverse range of interests that bridge the gap between technology and art. Connor's multifaceted education not only equips him with a solid foundation in computing but also instills a deep appreciation for the nuances of communication and design, setting the stage for a career that blends innovation with creativity.
